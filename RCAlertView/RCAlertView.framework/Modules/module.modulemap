@@ -1,0 +1,6 @@
+framework module RCAlertView {
+  umbrella header "RCAlertView.h"
+
+  export *
+  module * { export * }
+}
