@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIEdgeInsets marginInset;     //控件边距
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) NSInteger index;
+@property (nonatomic, assign) NSInteger type;
 - (UIView *)createUI;
 @end
 
