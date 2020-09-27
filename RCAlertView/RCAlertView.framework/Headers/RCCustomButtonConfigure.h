@@ -6,8 +6,7 @@
 //  Copyright © 2020 ye. All rights reserved.
 //
 
-#import <RCAlertView/RCAlertView.h>
-//#import "RCButtonConfigure.h"
+#import "RCButtonConfigure.h"
 
 typedef enum {
     Primary = 0,
@@ -19,13 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^actionBlock)(RCCustomButtonConfigureType type);
 
-@interface RCCustomButtonConfigure : RCBaseConfigure
+@interface RCCustomButtonConfigure : RCButtonConfigure
 
-@property (nonatomic, copy) NSString *btnTitleString;   //按钮文字
-@property (nonatomic) UIColor *bgColor;                 //按钮背景颜色
-@property (nonatomic) UIColor *btnTitleColor;           //按钮文字颜色
-@property (nonatomic, assign) float btnRadius;          //按钮圆角
-@property (nonatomic, assign) UIFont *btnFont;          //按钮文字字体
 @property (nonatomic, assign) RCCustomButtonConfigureType buttonType;
 @property (nonatomic, copy) actionBlock actionBlock;
 
