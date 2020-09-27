@@ -6,7 +6,7 @@
 //  Copyright © 2020 ye. All rights reserved.
 //
 
-#import "RCBaseConfigure.h"
+#import <RCAlertView/RCAlertView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
