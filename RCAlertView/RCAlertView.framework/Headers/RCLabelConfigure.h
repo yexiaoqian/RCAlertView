@@ -8,8 +8,13 @@
 
 #import "RCBaseConfigure.h"
 
-NS_ASSUME_NONNULL_BEGIN
+typedef enum {
+    OtherLabel = 0,
+    TitleLabel = 1,
+    MessageLabel = 2
+} RCLabelConfigureType;
 
+NS_ASSUME_NONNULL_BEGIN
 @interface RCLabelConfigure : RCBaseConfigure
 
 @property (nonatomic, assign) NSInteger lbNumberLines;
@@ -17,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UIFont *lbFont;
 @property (nonatomic) NSTextAlignment lbTextAlignment;
 @property (nonatomic) UIColor *lbTextColor;
-
+@property (nonatomic, assign) RCLabelConfigureType lbType;
 @end
 
 NS_ASSUME_NONNULL_END

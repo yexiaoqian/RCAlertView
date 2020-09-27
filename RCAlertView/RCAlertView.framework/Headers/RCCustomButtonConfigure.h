@@ -21,7 +21,7 @@ typedef void (^actionBlock)(RCCustomButtonConfigureType type);
 
 @interface RCCustomButtonConfigure : RCButtonConfigure
 
-@property (nonatomic, assign) RCCustomButtonConfigureType type;
+@property (nonatomic, assign) RCCustomButtonConfigureType buttonType;
 @property (nonatomic, copy) actionBlock actionBlock;
 
 - (instancetype)initActionWithTitle:(NSString *)title style:(RCCustomButtonConfigureType)type headler:(actionBlock)actionBlock;
