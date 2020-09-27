@@ -9,15 +9,15 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "RCAlertView"
-    spec.version      = "0.0.13"
+    spec.version      = "0.0.14"
     spec.summary      = "This is simple View"
     spec.homepage     = "https://github.com/yexiaoqian/RCAlertView.git"
     spec.license      = "MIT"
     spec.author             = { "yexiaoqian" => "441745749@qq.com" }
-    spec.source       = { :git => "https://github.com/yexiaoqian/RCAlertView.git", :tag => "0.0.13" }
+    spec.source       = { :git => "https://github.com/yexiaoqian/RCAlertView.git", :tag => "0.0.14" }
     spec.vendored_frameworks = 'RCAlertView/RCAlertView.framework'
     spec.requires_arc = true
     spec.platform = :ios, "9.0"
-    spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-    spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    #spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    #spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
