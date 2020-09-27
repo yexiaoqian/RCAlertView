@@ -9,14 +9,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RCAlertView"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "This is simple View"
   spec.homepage     = "https://github.com/yexiaoqian/RCAlertView.git"
   spec.license      = "MIT"
   spec.author             = { "yexiaoqian" => "441745749@qq.com" }
-  spec.source       = { :git => "https://github.com/yexiaoqian/RCAlertView.git", :tag => "0.0.4" }
+  spec.source       = { :git => "https://github.com/yexiaoqian/RCAlertView.git", :tag => "0.0.5" }
   spec.vendored_frameworks = 'RCAlertView/RCAlertView.framework'
   spec.requires_arc = true
-  spec.platform = :ios, "8.0"
+  spec.platform = :ios, "9.0"
 
 end
