@@ -6,7 +6,9 @@
 //  Copyright © 2020 ye. All rights reserved.
 //
 
-#import <RCAlertView/RCAlertView.h>
+#import <RCAlertView/RCBaseConfigure.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^buttonBlock)(NSInteger index);
 
@@ -21,3 +23,4 @@ typedef void (^buttonBlock)(NSInteger index);
 
 @end
 
+NS_ASSUME_NONNULL_END

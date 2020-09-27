@@ -6,7 +6,7 @@
 //  Copyright © 2020 ye. All rights reserved.
 //
 
-#import <RCAlertView/RCAlertView.h>
+#import <RCAlertView/RCBaseConfigure.h>
 
 typedef enum {
     OtherLabel = 0,
