@@ -14,6 +14,8 @@ typedef enum {
     MessageLabel = 2
 } RCLabelConfigureType;
 
+typedef void (^lineActionBlock)(NSString * _Nullable lineUrl);
+
 NS_ASSUME_NONNULL_BEGIN
 @interface RCLabelConfigure : RCBaseConfigure
 
@@ -23,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSTextAlignment lbTextAlignment;
 @property (nonatomic) UIColor *lbTextColor;
 @property (nonatomic, assign) RCLabelConfigureType lbType;
+@property (nonatomic, strong) NSMutableDictionary *lineDictionary;  //文本中的链接集合
+@property (nonatomic, copy) lineActionBlock lineActionBlock;
 @end
 
 NS_ASSUME_NONNULL_END
