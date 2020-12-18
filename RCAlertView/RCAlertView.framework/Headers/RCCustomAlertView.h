@@ -20,10 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIColor *contentBgColor;          //显示内容背景颜色
 @property (nonatomic, assign) float contentViewRadius;          //中间显示视图圆角
 @property (nonatomic, strong) NSMutableDictionary *lineDictionary;  //文本中的链接集合
+@property (nonatomic, strong) NSMutableDictionary *checkBoxlineDictionary;  //选项文本中的链接集合
 @property (nonatomic, copy) lineActionBlock lineActionBlock;
 @property (nonatomic, strong) NSArray *actionsArray;
 
-- (instancetype)initWithAlertTitle:(NSString *)title message:(NSString *)message withLineDictionary:(NSMutableDictionary *)lineDictionary;
+- (instancetype)initWithAlertTitle:(NSString *)title message:(NSString *)message withLineDictionary:(NSMutableDictionary *)lineDictionary withCheckBoxLineDictionary:(NSMutableDictionary *)checkBoxlineDictionary;
 
 - (instancetype)initWithAlertTitle:(NSString *)title message:(NSString *)message;
 

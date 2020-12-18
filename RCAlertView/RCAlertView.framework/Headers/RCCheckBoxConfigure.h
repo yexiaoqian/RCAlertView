@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^checkBlock)(BOOL checkSelect);
+typedef void (^checkBoxLineActionBlock)(NSString * _Nullable lineUrl);
 
 @interface RCCheckBoxConfigure : RCBaseConfigure
 
@@ -22,6 +23,8 @@ typedef void (^checkBlock)(BOOL checkSelect);
 @property (nonatomic, strong) UIImage *checkSelectImage;    //选择图片
 @property (nonatomic, strong) UIImage *checkUnSelectImage;  //未选择图片
 @property (nonatomic, copy) checkBlock checkBlock;
+@property (nonatomic, copy) checkBoxLineActionBlock checkBoxLineActionBlock;
+@property (nonatomic, strong) NSMutableDictionary *checkBoxlineDictionary;
 
 //以下两个属性不需要设置
 @property (nonatomic, assign) float checkBoxHeight;         //整个控件的高度
