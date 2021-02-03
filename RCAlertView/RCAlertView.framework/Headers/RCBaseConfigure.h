@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RCBaseConfigure : NSObject
 @property (nonatomic, assign) UIEdgeInsets marginInset;     //控件边距
-@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, assign) CGFloat height;               //控件高度
 @property (nonatomic, assign) NSInteger index;
-@property (nonatomic, assign) NSInteger type;
+@property (nonatomic, assign) NSInteger type;               //控件类型
 - (UIView *)createUI;
 @end
 
