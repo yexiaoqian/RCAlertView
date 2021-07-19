@@ -36,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)hide;
 
+/*
+ *  获取actions控件
+ */
+- (UIView *)getActionsViewWithIndex:(int)index;
 @end
 
 NS_ASSUME_NONNULL_END
