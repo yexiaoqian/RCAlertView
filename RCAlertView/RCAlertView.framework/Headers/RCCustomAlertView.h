@@ -18,7 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) UIColor *contentBgColor;          //显示内容背景颜色
 @property (nonatomic, strong) NSArray *actionsArray;            //控件数组
 @property (nonatomic, assign) float contentViewRadius;          //中间显示视图圆角
+@property (nonatomic, assign) BOOL isAllowHideTap;              //是否允许点击背景消失
 @property (nonatomic, copy) lineActionBlock lineActionBlock;    //点击链接回调
+
 /*
  *  样式一：文本中含有链接
  */
@@ -27,6 +29,17 @@ NS_ASSUME_NONNULL_BEGIN
  *  样式二
  */
 - (instancetype)initWithAlertTitle:(NSString *)title message:(NSString *)message;
+
+/*
+ *  样式三
+ */
+- (instancetype)initWithLoadingAlert;
+
+/*
+ *  样式三,显示内容
+ */
+- (void)showLoadingAlertContent:(NSString *)title message:(NSString *)message withLineDictionary:(NSMutableDictionary *)lineDictionary withCheckBoxLineDictionary:(NSMutableDictionary *)checkBoxlineDictionary;
+
 /*
  *  显示视图
  */
